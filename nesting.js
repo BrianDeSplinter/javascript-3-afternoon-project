@@ -160,11 +160,12 @@ var myCar = {
 */
 
 function recordCleaner(myCar){
-  for(let accidents in myCar){
-    if(accidents.atFaultForAccident === true){
-      myCar.accidents.atFaultForAccident === false
+    for(let key in myCar){
+    if(myCar[accidents[atFaultForAccident]] === true){
+       myCar[accidents[atFaultForAccident]] === false
     }
-  }return myCar
+    }
+  return myCar
 }
 
 
