@@ -28,7 +28,7 @@ productCopy = {...product}
 
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-colorsCopy= {...colors}
+colorsCopy= [...colors]
 
 
 
@@ -54,4 +54,4 @@ result = addNums(...numbers)
 let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
-combinedArrays = [...arr1] + [...arr2]
+combinedArrays = [...arr1, ...arr2]
