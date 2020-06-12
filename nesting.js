@@ -156,18 +156,19 @@ var myCar = {
   Please update this driving record so that I can feel better about my driving skills.
     1. Write a function called recordCleaner.
     2. Loop over the accidents array.
-    3. Change atFaultForAccident from true to false.
+    3. Change atFaultForAccident from true to false. 
 */
 
-function recordCleaner(myCar){
-    for(let key in myCar){
-    if(myCar[accidents[atFaultForAccident]] === true){
-       myCar[accidents[atFaultForAccident]] === false
+function recordCleaner() {
+  for(const key in myCar){
+    if(key == 'accidents'){
+      for(let i = 0; i < myCar[key].length; i++){
+        myCar[key][i].atFaultForAccident = false
+      }
     }
-    }
+  }
   return myCar
 }
-
 
 
 ////////// PROBLEM 5 //////////
@@ -185,15 +186,14 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-/*function looper (arr){
-  for(let i = 0; i < arr.length; i++){
-    for(let j = 0; j < arr[i].length; j++){
-      if (arr[i][j] % 2 === 0){
-        arr[i][j] = 'even'
+function looper (){
+  for(let i = 0; i < numsArr.length; i++){
+    for(let j = 0; j < numsArr[i].length; j++){
+      if (numsArr[i][j] % 2 === 0){
+        numsArr[i][j] = 'even'
       }else{
-        arr[i][j] = 'odd'
+        numsArr[i][j] = 'odd'
       }
     }
-  } return arr
+  } return numsArr
 }
-*/
